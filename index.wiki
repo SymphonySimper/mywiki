@@ -1,0 +1,4 @@
+= Docs =
+[[bat|Battery saver]]
+
+
