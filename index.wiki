@@ -1,4 +1,4 @@
-= Docs =
+_Main Index_
+
 [[bat|Battery saver]]
-
-
+[[Gaming]]
