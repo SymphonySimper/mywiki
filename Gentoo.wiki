@@ -1,0 +1,49 @@
+=== Compile Kernel ===
+== How to compile a kernel in gentoo? ==
+
+= To get the latest kernel run =
+	`emerge -uDNq --with-bdeps=y sys-kernel/gentoo-sources`
+
+= Change kernel symlink =
+	- By default kernel is symlinked to `/usr/src/linux`
+	- To see all the kernels that are currenty installed in the system run
+		- `eselect kernel list`
+			- It will list all the kernels installed.
+			- Currently selected kernel will be appeneded with a *
+		- To change the kernel symlink use
+			- `eselect kernel set number`
+				- After set give the number that you want to use.
+				- If you can't remember the numbers run `eselect kernel list` again to get the numbers.
+
+= Few things before compiling our kernel =
+	- Let's first cd into the kernel source directory by `cd /usr/src/linux`
+	- Run `make mrproper` to clean up the last compiled stuff.
+	- If you already have an old config copy it to the _/usr/src/linux_
+		- `cp /home/s2b/.config/kernel/*.config .config`
+			- This where I store my old kernel configs you're location may be different.
+
+= Let's compile our kernel =
+	- I have a _*12 thread*_ cpu so I'm using _*13*_ (_no. of threads + 1_). Use accordingly.
+	- Run `make -j13 menuconfig` to open up the ncurese config menu of kernel.
+		- Chosse options only you need.
+	- Run `make -j13 modules_prepare` to preaper all the modules.
+	- Run `make -j13 && make -j13 modules_install && make -j13 install`
+		- `make -j13` to compile the kernel.
+		- `make -j13 modules_install` to install all the modules.
+		- `make -j13 install` to install everything.
+	- Now let's create our initramfs. I'm going to use genkernel to do it.
+	- `genkernel --install --kernel-config=/usr/src/linux/.config --compress-initramfs-type=lz4 --microcode-initramfs initramfs`
+		- Here `--compress-initramfs-type=lz4` is not needed if you're going to use the deault compression.
+		- I'm using _lz4_ because it is faster the other compression algorithms.
+			- _lz4_ size is going to be larger in general.
+
+= Now let's prepare our bootloader =
+	- I use grub.
+	- So to update grub to use the newly compiled kernel run.
+	- `grub-mkconfig -o /boot/grub/grub.cfg`
+
+= Time has come =
+	- If everything went well do a reboot.
+	- If everything works fine after the boot.
+	- Run `cp .config /home/s2b/.config/kernel/$(uname -r).config`
+		- To copy the currently compiled config and save it.

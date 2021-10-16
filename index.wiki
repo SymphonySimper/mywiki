@@ -1,4 +1,8 @@
 _Main Index_
 
+== General ==
 [[bat|Battery saver]]
 [[Gaming]]
+
+== Distro ==
+[[Gentoo]]
