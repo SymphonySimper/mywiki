@@ -1,4 +1,4 @@
-=== Enable/Disable conservation mode lenovo ===
+== Enable/Disable conservation mode lenovo ==
 	- `echo 1 >/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 	- `echo 0 >/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 	- [[https://wiki.archlinux.org/title/Lenovo_Legion_7i|source]]

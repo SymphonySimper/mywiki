@@ -1,7 +1,7 @@
 == Table of contents ==
-[[#General]]
-[[#Steam]]
-	- [[#Launch options]]
+	- [[#General]]
+	- [[#Steam]]
+		- [[#Launch options]]
 
 === General ===
 	- Make sure picom/compton (any compositors) should be killed, before playing. As the will introduce input lags.
