@@ -1,10 +1,11 @@
 = Main Index =
 
-- == General ==
-	- [[/linux/bat|Battery saver]]
-	- [[linux/gaming|Gaming]]
-- == Distro ==
-	- [[linux/distros/gentoo|Gentoo]]
-* *Private*
-- == Ui/Ux ==
+- *Linux*
+	- General
+		- [[/linux/bat|Battery saver]]
+		- [[linux/gaming|Gaming]]
+	- Distro
+		- [[linux/distros/gentoo|Gentoo]]
+Private
+- Ui/Ux
 	- [[ui-ux/design-doc|Design Doc]]
