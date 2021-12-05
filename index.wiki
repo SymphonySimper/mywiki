@@ -6,6 +6,6 @@
 		- [[linux/gaming|Gaming]]
 	- Distro
 		- [[linux/distros/gentoo|Gentoo]]
-- Private (does not exist)
+- *Private* (_does not exist_)
 	- Ui/Ux
 		- [[ui-ux/design-doc|Design Doc]]
