@@ -1,5 +1,4 @@
-_Index_
-
+=Index=
 [[#General]]
 [[#Steam]]
 	- [[#Launch options]]
@@ -10,6 +9,6 @@ _Index_
 	- For _steam_ games lookup the [[#Steam|steam section]].
 
 === Steam ===
-= Launch options =
+==== Launch options ====
  - `vblank_mode=0 prime-run %command%`
 	- make sure _*nvidia prime*_ is installed
