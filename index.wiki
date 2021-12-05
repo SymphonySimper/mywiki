@@ -1,4 +1,4 @@
-_Main Index_
+= Main Index =
 
 == General ==
 [[/linux/bat|Battery saver]]
@@ -7,5 +7,6 @@ _Main Index_
 == Distro ==
 [[linux/distros/gentoo|Gentoo]]
 
+= Private =
 == Ui/Ux ==
 [[ui-ux/design-doc|Design Doc]]
