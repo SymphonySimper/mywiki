@@ -10,4 +10,3 @@
 === Private ===
 == Ui/Ux ==
 [[ui-ux/design-doc|Design Doc]]
-hihihihi
