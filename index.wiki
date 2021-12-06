@@ -8,4 +8,4 @@
 - *Ui/Ux*
 	- [[ui-ux/design-doc|Design Doc]]
 - *Personal*
-	- [[./personal/todo/todo]]
+	- [[./personal/todo/todo|Todo]]
