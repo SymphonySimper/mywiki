@@ -1,11 +1,11 @@
 = Main Index =
-
 - *Linux*
 	- General
 		- [[/linux/bat|Battery saver]]
 		- [[linux/gaming|Gaming]]
 	- Distro
 		- [[linux/distros/gentoo|Gentoo]]
-- *Private* (_does not exist_)
-	- Ui/Ux
-		- [[ui-ux/design-doc|Design Doc]]
+- *Ui/Ux*
+	- [[ui-ux/design-doc|Design Doc]]
+- *Personal*
+	- [[./personal/todo/todo]]

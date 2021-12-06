@@ -1,0 +1,35 @@
+== Table of contents ==
+	- [[#Daily]]
+	- [[#To Learn]]
+	- [[#To Make]]
+
+=== Daily ===
+	- [ ] complete unix assignment 2
+	- [ ] complete dbms assignment 2
+
+=== To Learn ===
+	- [ ] complete learing the rust book
+	- [ ] flutter
+
+=== To Make ===
+	- *mywiki*
+		- [ ] port my arch wiki stuff
+		- [ ] port my dwm stuff
+		- [ ] create a blog/diary
+		- [ ] explain my scripts
+		- [ ] create a custom css to match
+			  base16-grayscale-dark(my version)
+	- *rust*
+		- [ ] create a package manager for all my
+			  external git stuff
+		- [ ] port mywiki script and add features
+	- *flutter*
+		- [ ] create a alarm clock with sync
+		- [ ] create a timer app for exercise and
+			  meditaiton
+		- [ ] create a client for fdroid
+		- [ ] create a client for github
+	- *scripts*
+		- [ ] port ytd to yt-dlp
+	- *misc*
+		- [ ] blender complete donut
