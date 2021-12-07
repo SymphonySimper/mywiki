@@ -6,7 +6,7 @@
 	- Distro related
 		- [[linux/distros/gentoo|Gentoo]]
 - *Ui/Ux*
-	- [[ui-ux/design-doc|Design Doc]]
+	- [[ui-ux/design-doc-closed-source|Design Doc(private)]]
 - *Personal*
 	- [[personal/todo/todo|Todo]]
 	- [[personal/diary/diary|My Diary]]
