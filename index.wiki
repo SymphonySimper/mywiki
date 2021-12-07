@@ -3,9 +3,10 @@
 	- General
 		- [[/linux/bat|Battery saver]]
 		- [[linux/gaming|Gaming]]
-	- Distro
+	- Distro related
 		- [[linux/distros/gentoo|Gentoo]]
 - *Ui/Ux*
 	- [[ui-ux/design-doc|Design Doc]]
 - *Personal*
-	- [[./personal/todo/todo|Todo]]
+	- [[personal/todo/todo|Todo]]
+	- [[personal/diary/diary|My Diary]]
