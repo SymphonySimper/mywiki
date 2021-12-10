@@ -6,6 +6,9 @@
 === Daily ===
 	- [ ] complete unix assignment 2
 	- [ ] complete dbms assignment 2
+	- [ ] complete dbms lab
+		- [ ] install mysql
+		- [ ] complete observation
 
 === To Learn ===
 	- [ ] complete learing the rust book
