@@ -7,6 +7,8 @@
 		- [[linux/distros/gentoo|Gentoo]]
 - *Ui/Ux*
 	- [[ui-ux-private/design-doc-private|Design Doc(private)]]
+- *Tutorials*
+	- [[tutorials/installation/installation|Installing Stuff]]
 - *Personal*
 	- [[personal/todo/todo|Todo]]
 	- [[personal/diary/diary|My Diary]]

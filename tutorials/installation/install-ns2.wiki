@@ -1,0 +1,23 @@
+= How to install Network Simulator 2(ns2) in unix based os? =
+
+== Table of contents ==
+	- [[#Install]]
+	- [[#Reference]]
+
+=== Install ===
+	- [[https://sourceforge.net/projects/nsnam/postdownload|Download ns2 latest version]]
+		- It will download the latest version of ns2 available which is _2.35_
+		- The download file zip will be named as _ns-allione-2.35.tar.gz_
+	- Extract the downloaded file
+		- To extract the downloaded file
+			1. Run `cd Downloads` in your terminal
+				- _Downloads_ here refers to the directory where the file is kept
+				  it may be different in your case.
+			2. Now to extract the zip run `tar -xzf ns-allione-2.35.tar.gz`
+			3. Once the extraction is complete, run `cd ns-allinone-2.35`
+			4. Then run `./install` to install ns2
+				- This may take some time depeding upon your hardware as the program
+				  needs to be compiled.
+
+=== Reference ===
+	- http://www.isi.edu/nsnam/ns/ns-build.html

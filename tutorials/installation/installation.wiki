@@ -1,0 +1,2 @@
+== Table of index ==
+	- [[./install-ns2|Network Simulator 2(ns2)]]

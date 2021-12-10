@@ -1,4 +1,4 @@
-= How to compile a kernel in gentoo? =
+== How to compile a kernel in gentoo? ==
 
 === To get the latest kernel run ===
 	`emerge -uDNq --with-bdeps=y sys-kernel/gentoo-sources`
