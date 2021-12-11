@@ -2,12 +2,25 @@
 
 == Table of contents ==
 	- [[#Install]]
+		- [[#Debian/Ubuntu]]
+		- [[#Compile yourself(couldn't get it to work)]]
+		- [[#I'm not using debian/debian based distro]]
+		- [[#I use windows/macos]]
 	- [[#Reference]]
 
 === Install ===
-	- [[https://sourceforge.net/projects/nsnam/postdownload|Download ns2 latest version]]
-		- It will download the latest version of ns2 available which is _2.35_
-		- The download file zip will be named as _ns-allione-2.35.tar.gz_
+
+==== Debian/Ubuntu ====
+	- Run `sudo apt install tcl nam ns2`
+	- Thats it.
+
+==== Compile yourself(couldn't get it to work) ====
+	- *Dosen't work with gcc version greater than 4.8.0*
+	- *Download*
+		- [[https://github.com/SymphonySimper/ns-allinone-2.35|Fork of ns2 with added patch(recommended)]]
+		- [[https://sourceforge.net/projects/nsnam/postdownload|ns2 latest version(source forge)]]
+			- It will download the latest version of ns2 available which is _2.35_
+			- The download file zip will be named as _ns-allione-2.35.tar.gz_
 	- Extract the downloaded file
 		- To extract the downloaded file
 			1. Run `cd Downloads` in your terminal
@@ -18,6 +31,22 @@
 			4. Then run `./install` to install ns2
 				- This may take some time depeding upon your hardware as the program
 				  needs to be compiled.
+				- If everything goes well then that's it
+			5. Now follow the steps in the output and add *PATH* and *LD_LIBRARY_PATH*
+			   to your *.profile* file or to your shell *rc* file.
+				- Then source the file by running `source .profile` or `source .rc`
+				  respectively.
+				- Once that is done run `ns` to check wether the environment variables
+				  are set properly.
+			6. Now to validate your build (i.e) to check wether ns2 is properly
+			   installed run `./validate`
+
+==== I'm not using debian/debian based distro ====
+	You my friend is out of luck. If you are able to find *gcc version 4.8.0* and *lower*
+try compiling it might work if not. Run a *kvm/vm* with a debian/debian based distro.
+
+==== I use windows/macos ====
+	WHY?
 
 === Reference ===
 	- http://www.isi.edu/nsnam/ns/ns-build.html
