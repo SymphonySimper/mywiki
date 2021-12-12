@@ -27,4 +27,4 @@
 
 ==== Remove a user from a group ====
 	* *Can remove only one user from one group at a time*
-	To remove a user from a group run `gpasswd --delete [username] [group name]
+	- To remove a user from a group run `gpasswd --delete [username] [group name]`
