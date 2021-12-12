@@ -1,8 +1,9 @@
 = Main Index =
 - *Linux*
 	- General
-		- [[/linux/bat|Battery saver]]
+		- [[linux/bat|Battery saver]]
 		- [[linux/gaming|Gaming]]
+		- [[linux/admin|Admin stuff]]
 	- Distro related
 		- [[linux/distros/gentoo|Gentoo]]
 - *Tutorials*

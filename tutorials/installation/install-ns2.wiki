@@ -42,7 +42,7 @@
 			   installed run `./validate`
 
 ==== I'm not using debian/debian based distro ====
-	You my friend is out of luck. If you are able to find *gcc version 4.8.0* and *lower*
+	You my friend is out of luck. If you are able to find *gcc version 4.8.0* and *lower*,
 try compiling it might work if not. Run a *kvm/vm* with a debian/debian based distro.
 
 ==== I use windows/macos ====
