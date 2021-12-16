@@ -1,4 +1,11 @@
+= Install mysql in gentoo =
+
 == Table of contents ==
+	- [[#How to install mysql]]
+	- [[#How to run]]
+	- Errors
+		- [[#Error 2002]]
+	- [[#Reference]]
 
 
 === How to install mysql ===
@@ -6,5 +13,35 @@
 		- The above command configures and installs mysql.
 	- Run `emerge acct-user/mysql acct-group/mysql`
 
+=== How to run ===
+	- First make sure mysql server is running `rc-service mysql status`
+	  the output should say `* status: started`
+		- If not start the service by running `rc-service mysql start`
+		- If you don't want to do this everytime you can make mysql start
+		  at the boot by running `rc-update add mysql default`
+			- This will start mysql at boot.
+	- Run `mysql --user=username --password=password`
+		- eg: `mysql --user=root --password=root`
+		- In `--user=root` _root_ is the username and in
+		  `--password=root` _root_ is the password for the user _root_.
+		- Username and password would be assignend by you when installing
+		  mysql with _--config_ option as mentioned in [[#How to install mysql]]
+
 === Error 2002 ===
-	- ERROR {{{ ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) }}}
+	Error looks like this
+{{{
+	ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+}}}
+	- To resolve this error do the following
+		i) `touch /var/run/mysqld/mysqld.sock`
+		ii) `touch /var/run/mysqld/mysqld.pid`
+		iii) `chown -R mysql:mysql /var/run/mysqld/mysqld.sock`
+		iv) `chown -R mysql:mysql /var/run/mysqld/mysqld.pid`
+		v) `chmod -R 644 /var/run/mysqld/mysqld.sock`
+	- Once done start the service
+		- Run `rc-service mysql start`
+	- If everything goes well this error should be no more.
+
+=== Reference ===
+	- https://wiki.gentoo.org/wiki/MySQL
+	- https://stackoverflow.com/questions/54614259/docker-mysql-cant-connect-to-local-mysql-server-through-socket
