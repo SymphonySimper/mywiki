@@ -5,7 +5,7 @@
 		- [[linux/gaming|Gaming]]
 		- [[linux/admin|Admin stuff]]
 	- Distro related
-		- [[linux/distros/gentoo|Gentoo]]
+		- [[linux/distros/gentoo/gentoo|Gentoo]]
 - *Tutorials*
 	- [[tutorials/installation/installation|Installing Stuff]]
 	- [[tutorials/learn/learn|Learn]]

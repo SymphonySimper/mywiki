@@ -5,7 +5,7 @@
 
 === Daily ===
 	- [ ] complete unix assignment 2
-	- [ ] complete dbms assignment 2
+	- [X] complete dbms assignment 2
 	- [ ] complete dbms lab
 		- [ ] install mysql
 		- [ ] complete observation

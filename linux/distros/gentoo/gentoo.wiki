@@ -1,0 +1,3 @@
+== Table of contents ==
+	- [[kernel/kernel|Kernel stuff]]
+	- [[installing-stuff/installing-stuff|Installing stuff]]

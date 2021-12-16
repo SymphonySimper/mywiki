@@ -1,0 +1,10 @@
+== Table of contents ==
+
+
+=== How to install mysql ===
+	- Run `emerge --config dev-db/mysql`
+		- The above command configures and installs mysql.
+	- Run `emerge acct-user/mysql acct-group/mysql`
+
+=== Error 2002 ===
+	- ERROR {{{ ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) }}}
