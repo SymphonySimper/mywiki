@@ -4,14 +4,15 @@
 	- [[#To Make]]
 
 === Daily ===
-	- [ ] complete unix assignment 2
-	- [X] complete dbms assignment 2
-	- [ ] complete dbms lab
-		- [ ] install mysql
+	- [o] complete dbms lab
+		- [X] install mysql
 		- [ ] complete observation
+	- [ ] complete cn assignment 2
+	- [ ] complete at assignment 1
 
 === To Learn ===
 	- [ ] complete learing the rust book
+	- [ ] complete rust creating a text editor tutorial
 	- [ ] flutter
 
 === To Make ===
@@ -26,6 +27,7 @@
 		- [ ] create a package manager for all my
 			  external git stuff
 		- [ ] port mywiki script and add features
+		- [ ] create a port of yt-dlp
 	- *flutter*
 		- [ ] create a alarm clock with sync
 		- [ ] create a timer app for exercise and

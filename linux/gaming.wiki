@@ -4,8 +4,9 @@
 		- [[#Launch options]]
 
 === General ===
-	- Make sure picom/compton (any compositors) should be killed, before playing. As the will introduce input lags.
-	- For nvidia gpus pass _*prime-run*_ as an launch option. This runs the game with _dgpu_.
+	- Make sure picom/compton (any compositors) is not running, before playing.
+	  As it will introduce input lags.
+	- For an nvidia gpu pass _*prime-run*_ as an launch option. This runs the game with _dgpu_.
 	- For _steam_ games lookup the [[#Steam|steam section]].
 
 === Steam ===

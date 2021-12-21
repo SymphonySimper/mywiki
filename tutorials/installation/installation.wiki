@@ -1,4 +1,5 @@
 == Table of index ==
 	- [[install-ns2|Network Simulator 2(ns2)]]
-	- Linux/Gentoo
-		- [[/linux/distros/gentoo/installing-stuff/mysql|mysql]]
+	- Linux
+		- Gentoo
+			- [[/linux/distros/gentoo/installing-stuff/mysql|mysql]]
