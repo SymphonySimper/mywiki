@@ -1,0 +1,6 @@
+== Table of contents ==
+	- [[#Install]]
+
+=== Install ===
+	To install Screenkey run `emerge screenkey dbus-python`
+		- You may need to unmask it if required.

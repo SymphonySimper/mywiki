@@ -3,3 +3,4 @@
 	- Linux
 		- Gentoo
 			- [[/linux/distros/gentoo/installing-stuff/mysql|mysql]]
+			- [[/linux/distros/gentoo/installing-stuff/screenkey|Screenkey]]

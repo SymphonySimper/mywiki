@@ -12,7 +12,6 @@
 
 === To Learn ===
 	- [ ] complete learing the rust book
-	- [ ] complete rust creating a text editor tutorial
 	- [ ] flutter
 
 === To Make ===
@@ -28,6 +27,11 @@
 			  external git stuff
 		- [ ] port mywiki script and add features
 		- [ ] create a port of yt-dlp
+		- [ ] port dirc script
+			- [ ] add an recursive mode to loop every single subdir
+			- [ ] better formatting
+		- [ ] create an alarm clock
+		- [ ] complete rust creating a text editor tutorial
 	- *flutter*
 		- [ ] create a alarm clock with sync
 		- [ ] create a timer app for exercise and
@@ -36,5 +40,6 @@
 		- [ ] create a client for github
 	- *scripts*
 		- [ ] port ytd to yt-dlp
+		- [ ] create an alarm clock
 	- *misc*
 		- [ ] blender complete donut
