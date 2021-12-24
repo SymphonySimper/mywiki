@@ -1,0 +1,12 @@
+== Table of contents ==
+	- [[#Wrong time in websites]]
+
+=== Wrong time in websites ===
+	To fix this
+		- Edit _/etc/conf.d/hwclock_
+			- set `clock="local"` and
+			  run `rc-service hwclock restart`
+			- now to set the time run `hwclock --hctosys`
+		- Once this is done your time issue should be fixed
+		- But _date_ command will not display the local time, to do
+		  so run `date -u` everytime you run the date command.
