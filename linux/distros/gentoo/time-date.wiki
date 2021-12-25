@@ -4,16 +4,15 @@
 === How to set time ===
 	To set time(atleas the way I like to do)
 		- Run the following
-		{{{
-			echo "UTC" > /etc/timezone
-			emerge --config sys-libs/timezone-data
-			# Now to set the correct time run the following
-			# Here I'm going set time to 6:53(12h format)/ 18:53(24h format)
-			# You should use 24h time format to set the time
-			hwclock --set --date 18:53
-			hwclock --hctosys
-			rc-service hwclock restart
-		}}}
+			- You need root permissions to change time
+			- `echo "UTC" > /etc/timezone`
+			- `root # emerge --config sys-libs/timezone-data`
+			- Now to set the correct time run the following
+			- Here I'm going set time to 6:53(12h format)/ 18:53(24h format)
+			- You should use 24h time format to set the time
+			- `hwclock --set --date 18:53`
+			- `hwclock --hctosys`
+			- `rc-service hwclock restart`
 		- Now you should be good to go
 			- Here `date` and `date -u` will produce the expected result
 
