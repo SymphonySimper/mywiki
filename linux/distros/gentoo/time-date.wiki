@@ -1,12 +1,25 @@
 == Table of contents ==
-	- [[#Wrong time in websites]]
+	- [[#How to set time]]
 
-=== Wrong time in websites ===
-	To fix this
-		- Edit _/etc/conf.d/hwclock_
-			- set `clock="local"` and
-			  run `rc-service hwclock restart`
-			- now to set the time run `hwclock --hctosys`
-		- Once this is done your time issue should be fixed
-		- But _date_ command will not display the local time, to do
-		  so run `date -u` everytime you run the date command.
+=== How to set time ===
+	To set time(atleas the way I like to do)
+		- Run the following
+		{{{
+			echo "UTC" > /etc/timezone
+			emerge --config sys-libs/timezone-data
+			# Now to set the correct time run the following
+			# Here I'm going set time to 6:53(12h format)/ 18:53(24h format)
+			# You should use 24h time format to set the time
+			hwclock --set --date 18:53
+			hwclock --hctosys
+			rc-service hwclock restart
+		}}}
+		- Now you should be good to go
+			- Here `date` and `date -u` will produce the expected result
+
+==== Why this method? ====
+	I found this by accident while I was playing with _EndeavourOS_ in the live environment.
+As I had issues with time where I would have to settle with either wrong time in webistes(uses utc) or
+my cron wouldn't work. So it was frustrating experience to say the least. I tried a lot of things but
+nothing would fix this and finally when I was playing with _EndeavourOS_, it had proper time and I wanted
+to know how they did and thats how I ended up with this solution.
