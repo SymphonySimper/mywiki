@@ -1,24 +1,21 @@
 == Table of contents ==
 	- [[#How to set time]]
+	- [[#How to set time manually]]
 
 === How to set time ===
-	To set time(atleas the way I like to do)
 		- Run the following
 			- You need root permissions to change time
-			- `echo "UTC" > /etc/timezone`
-			- `root # emerge --config sys-libs/timezone-data`
-			- Now to set the correct time run the following
-			- Here I'm going set time to 6:53(12h format)/ 18:53(24h format)
-			- You should use 24h time format to set the time
-			- `hwclock --set --date 18:53`
-			- `hwclock --hctosys`
-			- `rc-service hwclock restart`
+			- `echo "Asia/Kolkata" > /etc/timezone`
+				- To see all the timezones run `ls /usr/share/zoneinfo`
+			- `emerge --config sys-libs/timezone-data`
 		- Now you should be good to go
-			- Here `date` and `date -u` will produce the expected result
 
-==== Why this method? ====
-	I found this by accident while I was playing with _EndeavourOS_ in the live environment.
-As I had issues with time where I would have to settle with either wrong time in webistes(uses utc) or
-my cron wouldn't work. So it was frustrating experience to say the least. I tried a lot of things but
-nothing would fix this and finally when I was playing with _EndeavourOS_, it had proper time and I wanted
-to know how they did and thats how I ended up with this solution.
+=== How to set time manually ===
+		- Here I'm going set time to 6:53(12h format)/ 18:53(24h format)
+			- You should use 24h time format to set the time and also you should
+			  pass the offset here as I'm in India it is +05:30
+			- `hwclock --set --date 18:53:00+05:30 --local`
+				- To set for _utc_ use _--utc_ instead of _--local_
+				- Here _18:53:00:+05:30_ is _hours(24h format):minutes:seconds:+offset_
+			- `hwclock --hctosys`
+		- Now you should be good to go

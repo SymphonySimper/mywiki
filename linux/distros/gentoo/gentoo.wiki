@@ -1,4 +1,4 @@
 == Table of contents ==
 	- [[kernel/kernel|Kernel stuff]]
 	- [[installing-stuff/installing-stuff|Installing stuff]]
-	- [[time-date|Time and date]]
+	- [[time-date|Time Date stuff]]
