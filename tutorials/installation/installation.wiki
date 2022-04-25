@@ -4,3 +4,5 @@
 		- Gentoo
 			- [[/linux/distros/gentoo/installing-stuff/mysql|mysql]]
 			- [[/linux/distros/gentoo/installing-stuff/screenkey|Screenkey]]
+		- Arch
+			- [[/linux/distros/arch/installing-stuff/tensorflow|tensorflow]]
