@@ -2,4 +2,6 @@
 
 === Install ===
 	To install Tensorflow run
-	{{{ sudo pacman -S python-tensorflow-cuda }}}
+	{{{
+	sudo pacman -S python-tensorflow-cuda
+	}}}
