@@ -5,6 +5,7 @@
 	[[#Configuring AWS CLI (Optional)]]
 	[[#Create a lambda function with SAM CLI]]
 	[[#Run lamda function locally]]
+	[[#Run locally with events]]
 
 === Dependencies ===
 	Install the following
@@ -32,16 +33,16 @@ run `sam init`
 	{{{
 		You can preselect a particular runtime or package type when using the `sam init` experience.
 		Call `sam init --help` to learn more.
-	
+
 		Which template source would you like to use?
 			1 - AWS Quick Start Templates
 			2 - Custom Template Location
 		Choice:
 	}}}
-	
+
 		If you have custom template then choose option _2_. But in our case we don't have
 	one. So we will choose option _1_.
-	
+
 	2. _*Output*_
 	{{{
 		Choose an AWS Quick Start application template
@@ -56,24 +57,24 @@ run `sam init`
 		Template:
 	}}}
 		We will choose _1_, which is an Hello World Example.
-	
+
 	3. _*Output*_
 	{{{
 		Use the most popular runtime and package type? (Python and zip) [y/N]:
 	}}}
 		For this choose _y_.
-	
+
 	4. _*Output*_
 	{{{
-		Project name [sam-app]: 
+		Project name [sam-app]:
 	}}}
 		You can enter give whatever name that you like.
-	
+
 	5. _*Output*_
 		If everything goes well, you'll have the following output.
 	{{{
 		Cloning from https://github.com/aws/aws-sam-cli-app-templates (process may take a moment)
-		
+
 		    -----------------------
 		    Generating application:
 		    -----------------------
@@ -83,10 +84,10 @@ run `sam init`
 		    Dependency Manager: pip
 		    Application Template: hello-world
 		    Output Directory: .
-		    
+
 		    Next steps can be found in the README file at ./HelloWorld/README.md
-		        
-		
+
+
 		    Commands you can use next
 		    =========================
 		    [*] Create pipeline: cd HelloWorld && sam pipeline init --bootstrap
@@ -100,3 +101,10 @@ run `sam init`
 			- You have _build_ the project _everytime_ you make a change.
 		2. To run the function locally
 			- Run `sam local invoke`
+
+=== Run locally with events ===
+	- To run locally with events, you have to create a _json_ file.
+	- Then run `sam local invoke -e events.json`
+		- Here _events.json_ is the file with the _json_ object.
+	- If you have more than one function then you have to mention the function's 
+	name. Ex `sam local invoke HelloWorldFunction -e events.json`.
