@@ -4,6 +4,7 @@
 		- [[linux/bat|Battery saver]]
 		- [[linux/gaming|Gaming]]
 		- [[linux/admin|Admin stuff]]
+		- [[linux/touchpad|Touchpad]]
 	- Distro related
 		- [[linux/distros/gentoo/gentoo|Gentoo]]
 - *Tutorials*

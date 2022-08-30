@@ -1,0 +1,4 @@
+= Touchpad =
+=== Enable tap to click ===
+	- First find the name of your touch pad by running `xinput list | grep Touchpad`
+	- Then run `xinput set-prop "Touchpad name" "libinput Tapping Enabled" 1`
